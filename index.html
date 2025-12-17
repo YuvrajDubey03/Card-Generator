@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Card Generator</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    html, body {
+      height: 100%;
+      width: 100%;
+    }
+    #main {
+      min-height: 100%;
+      width: 100%;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    /* Inputs */
+    input {
+      width: 100%;
+      max-width: 350px;
+      margin: 10px 0;
+      padding: 12px 14px;
+      font-size: 15px;
+      border-radius: 12px;
+      border: none;
+      outline: none;
+    }
+    /* Card */
+    .card {
+      max-width: 400px;
+      width: 100%;
+      margin-top: 40px;
+      padding: 25px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45);
+    }
+    /* Profile Image */
+    .profile {
+      height: 55px;
+      width: 55px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 15px;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+    }
+    .profile img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    /* Text */
+    .card h3 {
+      margin-top: 5px;
+      font-size: 20px;
+      color: #ffffff;
+    }
+    .card h5 {
+      margin-top: 4px;
+      font-size: 14px;
+      color: #d1d1d1;
+    }
+    .card p {
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+  <div id="main">
+    <form action="">
+      <input type="text" placeholder="profile-pic" />
+      <input type="text" placeholder="username" />
+      <input type="text" placeholder="occupation" />
+      <input type="text" placeholder="bio" />
+      <input type="submit" />
+    </form>
+
+    <!-- Optional example card - uncomment if needed -->
+    <!--
+    <div class="card">
+      <div class="profile">
+        <img src="https://images.unsplash.com/photo-1765353225650-2280f21cb79e?w=600&auto=format&fit=crop&q=60" alt="" />
+      </div>
+      <h3>A PICTURE</h3>
+      <h5>A GOOD ONE</h5>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sit nulla tempore eos ea totam harum blanditiis temporibus recusandae repellat!</p>
+    </div>
+    -->
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
